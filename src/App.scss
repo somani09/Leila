@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Inconsolata:wght@200;300;400;500;600;700;800&family=Inknut+Antiqua:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$primaryColor: #f1f9fc;
+$secondryColor: #558599;
+$color1: #e0eeef;
+$color2: #c6d8e2;
+$color3: #92b7c0;
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: "roboto";
+  font-size: 18px;
+  text-align: justify;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.backgroundImage {
+  z-index: -1;
+  position: fixed;
+  top: -15px;
+  left: 0;
+  // right: -150px;
+  // left: 150px;
+  height: 100%;
+  width: 100%;
+  background-image: url("../src/assets/images/backgroundMobile.JPG");
+  object-fit: contain;
+  background-size: cover;
+}
+.outer {
+  background-color: white;
+  margin-top: 50px;
+}
+
+.backImage {
+  z-index: -1;
+  top: -50px;
+  height: 60%;
+  width: 100%;
+  object-fit: contain;
+  // position: absolute;
+  left: 0;
+  background-size: cover;
+  top: 0;
+  // right: 50%;
+  // left: calc(100% + 300px);
+  // transform: translate(-100%, -100%);
+  opacity: 0.5;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 5px;
+
+  backdrop-filter: blur(15px);
+}
+
+@media screen and (min-width: 769px) {
+  .backgroundImage {
+    z-index: -1;
+    position: fixed;
+    top: -120px;
+    left: 0;
+    // right: -150px;
+    // left: 150px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../src/assets/images/background.jpg");
+    object-fit: contain;
+    background-size: cover;
+  }
+}

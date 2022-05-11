@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+
+.mainContainer {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+  .conference {
+    width: 90%;
+    text-align: left;
+    margin-top: 50px;
+    .heading {
+      margin-bottom: 50px;
+      font-family: $font;
+      font-size: $headings-size;
+      font-weight: $headings-weight;
+      color: $primaryColor2;
+      //   border-bottom: 2px solid black;
+    }
+
+    .conArea {
+      .singleCon {
+        margin-bottom: 30px;
+      }
+      .conHead {
+        font-family: $font;
+
+        font-size: $info-size;
+        color: $secondryColor;
+        margin-bottom: 15px;
+      }
+      .date {
+        font-family: $font;
+
+        font-size: $info-size;
+        color: $secondryColor;
+        margin-bottom: 15px;
+      }
+      .link {
+        text-decoration: none;
+        // border-bottom: 1px solid black;
+        color: $primaryColor;
+        font-family: $font;
+      }
+
+      .conInfo {
+        margin-top: 20px;
+        font-family: $font;
+        font-style: italic;
+        font-size: $info-size;
+        color: $secondryColor;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .mainContainer {
+    margin: 20px 10px;
+    width: 100%;
+    .conference {
+      width: 750px;
+    }
+  }
+}

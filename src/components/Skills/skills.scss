@@ -1,0 +1,125 @@
+@import "../../variables.scss";
+
+.skills {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  // justify-content: space-evenly;
+  align-items: center;
+  top: -30px;
+
+  .content {
+    position: relative;
+    width: 100%;
+    // background-color:green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .skills-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 40px;
+
+    .subHeading {
+      font-family: $font;
+      font-size: $headings-size;
+      font-weight: $headings-weight;
+      color: $primaryColor2;
+    }
+  }
+
+  .certificates-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 40px;
+
+    .subHeading {
+      font-family: $font;
+      font-size: $headings-size;
+      font-weight: $headings-weight;
+      color: $primaryColor2;
+    }
+  }
+
+  .certificates {
+    margin: 20px 0;
+    font-size: 20px;
+    transform: translate(15%);
+
+    .name {
+      font-size: 26px;
+      font-size: 600;
+      color: $secondryColor2;
+    }
+
+    .college {
+      font-size: 20px;
+      color: $secondryColor;
+      font-size: 400;
+    }
+
+    .date {
+      font-size: 18px;
+      font-size: 300;
+      color: $primaryColor2;
+    }
+  }
+
+  .skill {
+    position: relative;
+    margin: 10px 0;
+
+    .skillName {
+      font-family: $font;
+
+      font-size: $info-size;
+      text-align: start;
+      color: $secondryColor;
+      margin: 10px 0;
+    }
+
+    .bar {
+      // position: relative;
+      width: 100%;
+      height: 5px;
+      background-color: $color2;
+    }
+
+    .amount {
+      height: 5px;
+      background-color: $primaryColor;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .skills {
+    .content {
+      position: relative;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      // margin-bottom: 40px;
+      margin: 50px 20px 50px 0;
+    }
+
+    .skills-col {
+      width: 40%;
+    }
+
+    .certificates-col {
+      width: 60%;
+    }
+
+    .skill {
+      margin: 10px 0;
+    }
+  }
+}

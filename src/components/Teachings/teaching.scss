@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.mainContainer {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+  .publications {
+    max-width: 90%;
+    text-align: left;
+    margin-top: 50px;
+    .heading {
+      margin-bottom: 50px;
+      font-family: $font;
+      font-size: $headings-size;
+      font-weight: $headings-weight;
+      color: $primaryColor2;
+      //   border-bottom: 2px solid black;
+    }
+
+    .pubArea {
+      .pubYr {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-family: $font;
+        font-size: $headings-size;
+        font-weight: $headings-weight;
+        color: $primaryColor2;
+      }
+
+      .pub {
+        font-family: $font;
+        color: $secondryColor;
+        text-align: justify;
+
+        font-size: $info-size;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .mainContainer {
+    margin: 20px 10px;
+    width: 100%;
+    .publications {
+      width: 750px;
+    }
+  }
+}
