@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
+import { cvData } from "../../data/cvData";
 import "./cv.scss";
 const CV = () => {
   return (
@@ -7,7 +8,7 @@ const CV = () => {
       <NavBar />
       <iframe
         className="cv"
-        src="https://drive.google.com/file/d/1GIC39MdLgs454vM7J5BmJzTsUmfA8zjD/preview"
+        src={cvData.cvGoogleDrive}
         allow="autoplay"
       ></iframe>
     </div>

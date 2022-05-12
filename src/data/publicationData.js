@@ -4,6 +4,11 @@ export const publicationData = {
       year: "2022",
       publications: [
         {
+          pub: `Gholami L, The efficacy of incidental attention to formulaic and non-formulaic forms in focus on form. 
+          The Modern Language Journal, In Press. 
+          `,
+        },
+        {
           pub: "Gholami L, Incidental focus-on-form characteristics predicting learner uptake: Formulaic vs. non-formulaic forms. Vigo International Journal of Applied Linguistics, 67-102. ",
           link: "https://doi.org/10.35869/vial.v0i19.3760 ",
         },
